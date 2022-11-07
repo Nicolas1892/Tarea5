@@ -8,19 +8,25 @@ function fibonacci(limite) {
     return arr_fib;
 }
 
-const serie_fibonacci = fibonacci(1000);
+const serie_fibonacci = fibonacci(100);
 
-console.log(serie_fibonacci);
+let mil_n = serie_fibonacci.filter(number => number < 1000);
+
+console.log(mil_n);
 
 let array_pares = serie_fibonacci.filter(function(numeros) {
     return numeros % 2 == 0;
 })
 
-console.log(array_pares);
+let mil_pares = array_pares.filter(number => number < 1000);
+
+
+console.log(mil_pares);
 
 
 let array_impares = serie_fibonacci.filter(function(numeros) {
     return numeros % 3 == 0;
 })
+let mil_impares = array_impares.filter(number => number < 1000);
 
-console.log(array_impares);
+console.log(mil_impares);
