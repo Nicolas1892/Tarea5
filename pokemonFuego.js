@@ -5,7 +5,7 @@ let pokemones = [
  },
  {
  nombre: 'Charmander',
- tipo: 'Fuego',
+ tipo: "Fuego"
  },
  {
  nombre: 'Bulbasaur',
@@ -17,7 +17,7 @@ let pokemones = [
  },
  {
  nombre: 'Charmeleon',
- tipo: 'Fuego'
+ tipo: "Fuego"
  },
  {
  nombre: 'Weedle',
@@ -25,13 +25,14 @@ let pokemones = [
  },
  {
  nombre: 'Charizard',
- tipo: 'Fuego'
+ tipo: "Fuego"
  }
-]
+];
 
-PokemonesFuego = [
-     pokemones[1], pokemones [4], pokemones[6]
-]
+let fuego = pokemones.filter(pokemones => pokemones.tipo === "Fuego");
 
-console.log(PokemonesFuego);
+console.log(fuego);
+
+
+
 
