@@ -25,7 +25,7 @@ console.log(mil_pares);
 
 
 let array_impares = serie_fibonacci.filter(function(numeros) {
-    return numeros % 3 == 0;
+    return numeros % 2 != 0;
 })
 let mil_impares = array_impares.filter(number => number < 1000);
 
